@@ -18,17 +18,17 @@ public class CoolWeatherOpenHelper extends SQLiteOpenHelper{
     public static final String CREATE_PROVINCE="create table Province(" +
             "id integer primary key autoincrement," +
             "province_name text," +
-            "province_code text";
+            "province_code text)";
     public static final String CREATE_CITY="create table City(" +
             "id integer primary key autoincrement," +
             "city_name text," +
             "city_code text," +
-            "province_id integer";
+            "province_id integer)";
     public static final String CREATE_COUNTRY="create table Country(" +
             "id integer primary key autoincrement," +
             "country_name text," +
             "country_code text," +
-            "ciry_id integer";
+            "ciry_id integer)";
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(CREATE_PROVINCE);
